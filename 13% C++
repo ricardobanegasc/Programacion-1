@@ -1,0 +1,21 @@
+// Impuesto 13 por ciento.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+{
+	float b,i,r;
+	cout<<"ingrese el monto de venta";
+	cin>>b;
+	r=0.13;
+	i=b*r;
+	cout<<"el monto a pagar es:"<<i;
+	getch();
+	return 0;
+}
