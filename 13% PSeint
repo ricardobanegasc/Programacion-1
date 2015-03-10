@@ -1,0 +1,7 @@
+Proceso Impuestoapagarenbaseaunmontodeventa
+	Escribir ("Ingrese el monto de venta");
+	Leer B;
+	I<-B*0.13;
+	Escribir ("El monoto a pagar es:I");
+	Escribir I;
+FinProceso
