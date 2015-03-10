@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+int main()
+{
+	float l,h,a;
+	cout<<"ingrese lado l";
+	cin>>l;
+	cout<<"Ingrese lado h";
+	cin>>h;
+	a=l*h;
+	cout<<"el area es;"<<a;
+	getch();
+	return 0;
+}
