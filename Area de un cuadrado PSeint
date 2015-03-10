@@ -1,0 +1,7 @@
+Proceso areacuadrado
+	Escribir ("Ingrese su lado")
+	Leer L;
+	A<-L*L;
+	Escribir ("El area es:A");
+	Escribir A
+FinProceso
