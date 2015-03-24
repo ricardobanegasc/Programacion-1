@@ -1,0 +1,22 @@
+Proceso NotaFinalUpsa
+	
+	Escribir ("Ingrese la Cantidad de alumnos");
+	Leer N;
+	Para N<-1 Hasta 100 Hacer
+		Escribir ("Ingrese nota practica");
+		Leer NP;
+		Escribir ("Ingrese nota del primer parcial:");
+		Leer PP;
+		Escribir ("Ingrese nota del segundo parcial")
+		Leer SP;
+		Escribir ("Ingrese nota del tercer parcial:");
+		Leer TP;
+		Escribir ("Ingrese nota del examen final:")
+		Leer EF;
+		NF<-NP*20/100+(PP+SP+TP)*40/300+EF*40/100;
+		Escribir ("La nota final es:");
+		Escribir NF;
+		
+	Fin Para
+	
+FinProceso
