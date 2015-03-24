@@ -10,7 +10,7 @@ Proceso SalarioNeto
 		IVA<-0.13;
 		SB<-HT*PT;
 		SN<-SB-(SB*IVA);
-		Escribir ("El sueldo neto es:");
+		Escribir ("El salario Neto es:");
 		Escribir SN;
 		
 	Fin Para
