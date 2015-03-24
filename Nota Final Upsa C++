@@ -1,0 +1,32 @@
+// Nota Final Upsa C++.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{
+	float NP, PP, SP, TP, EF, NF, N, I;
+	cout<<"Escribir el numero de alumnos";
+	cin>>N;
+	for(I=1;I<=N;I++)
+	{
+		cout<<"\ningresar nota practica:";
+		cin>>NP;
+		cout<<"ingresar nota del primer parcial:";
+		cin>>PP;
+		cout<<"ingresar nota del segundo parcial:";
+		cin>>SP;
+		cout<<"ingresar nota del tercer parcial:";
+		cin>>TP;
+		cout<<"ingresar nota del examen final:";
+		cin>>EF;
+		NF=NP*20/100+(PP+SP+TP)*40/300+EF*40/100;
+		cout<<"La nota final es:"<<NF;
+		getch();
+	}
+}
