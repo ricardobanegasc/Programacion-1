@@ -1,0 +1,30 @@
+// Salario Neto c++.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{
+	float HT, SH, SB, IVA, SN, NF, N, I;
+	cout<<"Escribir el numero de trabajadores";
+	cin>>N;
+	for(I=1;I<=N;I++)
+	{
+		cout<<"\ningresar horas trabajadas:";
+		cin>>HT;
+		cout<<"ingresar sueldo por hora trabajada:";
+		cin>>SH;
+		IVA=0.13;
+		SB=HT*SH;
+		SN=SB-(SB*IVA);
+		cout<<"El salario neto es:"<<SN;
+		getch();
+	}
+
+}
+
