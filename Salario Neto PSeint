@@ -1,0 +1,18 @@
+Proceso SalarioNeto
+	
+	Escribir ("Ingrese la Cantidad de trabajadores");
+	Leer N;
+	Para N<-1 Hasta 100 Hacer
+		Escribir ("Ingrese horas trabajadas");
+		Leer HT;
+		Escribir ("Ingrese sueldo por hora trabajada:");
+		Leer PT;
+		IVA<-0.13;
+		SB<-HT*PT;
+		SN<-SB-(SB*IVA);
+		Escribir ("El sueldo neto es:");
+		Escribir SN;
+		
+	Fin Para
+	
+FinProceso
