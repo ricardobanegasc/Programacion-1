@@ -1,0 +1,68 @@
+// RicardoBanegas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{
+	float a, b, c, d, e, f, g, h, A;
+	int Opcion;
+	do {	
+		cout<<"\n\t MENU"<<endl;
+		cout<<"\t ===="<<endl;
+
+		cout<<"1.-Area del Triangulo"<<endl;
+		cout<<"2.-Area del Rectangulo"<<endl;
+		cout<<"3.-Impuesto a pagar con IVA"<<endl;
+		cout<<"4.-Nota Practica Final"<<endl;
+		cout<<"0.-Salir"<<endl;
+		cout<<"Elige una opcion: " ;
+		cin>>Opcion;
+
+		switch(Opcion) {
+			case 1:
+				cout<<"Ingrese base del triangulo: " ;
+				cin>>b;
+				cout<<"Ingrese altura del triangulo: " ;
+				cin>>a;
+			    A=b*a/2;
+				cout<<"El resultado es:"<<A;
+				break;
+			case 2:
+				cout<<"Ingrese altura del rectangulo: " ;
+				cin>>c;
+				cout<<"Ingrese base del rectangulo: " ;
+				cin>>d;
+				A=c*d;
+				cout<<"El resultado es:"<<A;
+				break;
+			case 3:
+				cout<<"Ingrese monto: " ;
+				cin>>e;
+				A=e*0.13;
+				cout<<"El resultado es:"<<A;
+				break;
+			case 4:
+				cout<<"Ingrese nota del practico 1: " ;
+				cin>>f;
+				cout<<"Ingrese nota del practico 2: " ;
+				cin>>g;
+				cout<<"Ingrese nota del practico 3: " ;
+				cin>>h;
+				A=(f+g+h)*20/300;
+				cout<<"El resultado es:"<<A;
+				break;
+			case 0: cout<<"Salir";break;
+			default:
+				cout<<"Opcion Invalida"<<endl;
+	   }
+	getch();
+	}	while (Opcion !=0 ) ;
+	system("cls");
+}
+
