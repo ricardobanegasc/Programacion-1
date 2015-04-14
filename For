@@ -1,0 +1,29 @@
+// Practico 6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main ()
+{
+	float x, s=0;
+	int n, i, signo=1, fac=1;
+	cout<<"ingrese el valor de x: " ;
+	cin>>x;
+	cout<<"ingrese el valor de n: " ;
+	cin>>n;
+	for (i=1;i<=n;i++)	
+	{
+		fac=fac*i;
+		s=s+(signo*pow(x,i)/fac);
+		signo=signo*-1;
+	}
+	cout<<"la suma de la serie es: "<<s;
+	getch();
+		
+	return 0;
+}
