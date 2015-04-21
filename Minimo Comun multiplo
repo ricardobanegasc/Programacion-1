@@ -1,0 +1,26 @@
+Proceso Minimocomunmultiplo
+	Escribir "Ingrese dos numeros: ";
+	Leer a;
+	Leer b;
+		Si a<b 
+			Entonces
+			x<-a
+			z<-b
+			Sino
+			x<-b
+			z<-a
+			Fin Si
+	n<-1;
+	i<-2;
+	Repetir
+		si x%i=0 && z%i=0
+			Entonces
+			n<-n*i 
+			x<-x/i
+			z<-z/i
+		Sino 
+			i=i+1
+		FinSi
+	Hasta Que i>x
+	Escribir "El minimo comun multiplo es: "  n;
+FinProceso
