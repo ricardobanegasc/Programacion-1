@@ -1,0 +1,45 @@
+// Funcion Portencia Factorial.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int potencia(int base, int exponente);
+int fac(int n);
+
+void main()
+{
+	int b, e , s;
+	cout<<"ingrese la base: ";
+	cin>>b;
+	cout<<"ingrese el exponente: ";
+	cin>>e;
+	s=0;
+	for (int i=1;i<=e;i++)
+		s=s+potencia(b,e)/fac(e);
+	cout<<"El resultado es: "<<s;
+	getch();
+}
+	
+int potencia(int base, int exponente)
+{
+	int x;
+	x=1;
+	for (int i=1;i<=exponente;i++)
+		x=x*base;
+	return x;
+	getch();
+}
+
+int fac(int numero)
+{
+	int x;
+	x=1;
+	for (int i=1;i<=numero;i++)
+		x=x*i;
+	return x;
+	getch();
+}
