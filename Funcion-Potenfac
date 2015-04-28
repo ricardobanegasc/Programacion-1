@@ -7,24 +7,25 @@
 
 using namespace std;
 
-int potencia(int base, int exponente);
+float potencia(float base, int exponente);
 int fac(int n);
 
 void main()
 {
-	int b, e , s;
+	int b, e;
+	float s;
 	cout<<"ingrese la base: ";
 	cin>>b;
 	cout<<"ingrese el exponente: ";
 	cin>>e;
 	s=0;
 	for (int i=1;i<=e;i++)
-		s=s+potencia(b,e)/fac(e);
+		s=s+potencia(b,i)/fac(i);
 	cout<<"El resultado es: "<<s;
 	getch();
 }
 	
-int potencia(int base, int exponente)
+float potencia(float base, int exponente)
 {
 	int x;
 	x=1;
