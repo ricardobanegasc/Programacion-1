@@ -1,0 +1,56 @@
+// PROYECTO.cpp : Defines the entry point for the application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define max 100
+
+using namespace std;
+
+void cargar(int vec[], int tan);
+void mostrar(int vec[], int tan):
+float promedio(int vec[], int tan);
+void main()
+{
+	int n, vector[max];
+	float prom;
+	do {
+		cout<<"Ingresar el numero de elementos: ";
+		cin>>n;
+	   }
+    while ((n<=0)||(n>100));
+	cargar(vector, n);
+	mostrar(vector, n);
+	prom=promedio(vector, n);
+	cout<<"El promedio es: "<<prom;
+	getch();
+}
+
+void cargar(int vec[], int tan)
+{
+	int i;
+	for (int i=0;i<=tan;i++)
+	{
+		cout<<"Ingrese el valor de vec["<<i<<"]=";
+		cin>>vec[i];
+	}
+}
+
+void mostrar(int vec[], int tan)
+{
+	int i;
+	for (i=0;i<tan;i++)
+	{
+		cout<<"vec["<<i<<"]=";
+		cout<<vec[i]<<endl;
+	}
+}
+
+float promedio(int vec[], int tan)
+{
+	float suma=0;
+	for (int i=0;i<=tan;i++)
+	suma=suma+vec[i];
+	return suma/tan;
+}
